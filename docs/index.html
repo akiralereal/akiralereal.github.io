@@ -18,8 +18,14 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
 
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+   
    <!----font--awesome---start-->
-   <script src="https://kit.fontawesome.com/3f86d2f0e3.js" crossorigin="anonymous"></script>
+   <!-- 注释掉旧的Font Awesome Kit -->
+   <!-- <script src="https://kit.fontawesome.com/3f86d2f0e3.js" crossorigin="anonymous"></script> -->
+   
+   <!-- 使用新版本的Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
    <!-- ionicons Fonts for icons -->
    <link href="css/ionicons.min.css" rel="stylesheet">
    <!-- bootstrap -->
@@ -33,6 +39,52 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+      
+   <!-- 自定义社交媒体图标颜色 -->
+   <style>
+      /* 默认状态 - 显示品牌颜色 */
+      .social {
+         font-size: 48px;
+         margin: 0 10px;
+         transition: all 0.3s ease;
+      }
+      
+      /* Gmail - 谷歌红色 */
+      .fa-envelope.social {
+         color: #EA4335;
+      }
+      
+      /* X (Twitter) - 黑色 */
+      .fa-x-twitter.social {
+         color: #000000;
+      }
+      
+      /* GitHub - 深灰色 */
+      .fa-github.social {
+         color: #333333;
+      }
+      
+      /* YouTube - 红色 */
+      .fa-youtube.social {
+         color: #FF0000;
+      }
+      
+      /* 悬停效果 - 可选 */
+      .social:hover {
+         transform: scale(1.2);
+         opacity: 0.8;
+      }
+      
+      /* 如果你想在深色背景上使用，可以给GitHub和X添加白色背景 */
+      /*
+      .fa-x-twitter.social,
+      .fa-github.social {
+         background: white;
+         padding: 5px;
+         border-radius: 50%;
+      }
+      */
+   </style>
 </head>
 
 <body class="box-layout">
@@ -87,7 +139,6 @@
 <!--      <h2 style="font-family: 'Optima';"> Akira Le</h2><br>-->
 
       <p style=" font-size:18px;line-height: 40px; color: black;font-family: 'Optima';">
-<!--          <a href="http://www.yudoauto.com/" class="all-link">吉祥智驱</a> <br>-->
         </p>
 
 
@@ -96,16 +147,21 @@
          <div class="mtb" style="margin: 50px 0;">
          <div style="align-items: center;  text-align: center; ">
 
-             <a target="blank" href="mailto:akiralereal@gmail.com"><i class="fas fa-envelope social"></i></a>
+      <!-- Email图标 -->
+      <!-- <a target="blank" href="mailto:akiralereal@gmail.com"><i class="fas fa-envelope social"></i></a> -->
 
-       <a target="blank" href="https://twitter.com/akiralereal"><i class="fab fa-twitter social"></i></a>
+       <!-- 更新为X图标 -->
+       <a target="blank" href="https://x.com/akiralereal"><i class="fab fa-x-twitter social"></i></a>
 
-<!--       <a target="blank" href="https://github.com/akiralereal"> <i class="fab fa-github social"></i></a>-->
+       <!-- GitHub图标 -->
+       <a target="blank" href="https://github.com/akiralereal"> <i class="fab fa-github social"></i></a>
+
+       <!-- YouTube图标 -->
+       <a target="blank" href="https://www.youtube.com/@ceaule"> <i class="fab fa-youtube social"></i></a>
 
 <!--       <a target="blank" href="https://www.linkedin.com/in/yuhuai-tony-wu-02a641b5/"> <i class="fab fa-linkedin-in social" ></i></a><br><br>-->
  
        </div>
-
 <!--       <div style="text-align: center; font: size 0.8rem;">I am on these social platforms. Email is the best way to reach me.</div>-->
        </div>
     </div>
@@ -130,7 +186,7 @@
 <!--     <h1 style="color: black; text-decoration: underline; font-size: 24px;font-family: 'Optima';">Research Interests</h1><br>-->
 <!--   <p style="font-size: 18px;">Machine reasoning, theorem proving, modularity, language, neuro-symbolic integration.</p> -->
 
-       <p style="font-size: 18px; font-family: 'Optima'; line-height: 1.6">👀 I’m interested in ...Web, iOS, Python
+       <p style="font-size: 18px; font-family: 'Optima'; line-height: 1.6">👀 I'm interested in ...Web, iOS, Python
        </p>
        <p style="font-size: 18px; font-family: 'Optima'; line-height: 1.6">……
        </p>
